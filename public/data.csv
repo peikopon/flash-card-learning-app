@@ -1,0 +1,150 @@
+﻿Section,Content,Details,Link
+Analytics,Amazon Athena,analyze data directly in Amazon S3 by using standard SQL,https://aws.amazon.com/athena/
+Analytics,AWS Data Exchange,"find, subscribe to, and use third-party data in the cloud",https://aws.amazon.com/data-exchange/
+Analytics,Amazon EMR,run big data frameworks to process and analyze vast amounts of data,https://aws.amazon.com/emr/
+Analytics,AWS Glue,"discover, prepare, move, and integrate data from multiple sources",https://aws.amazon.com/glue/
+Analytics,Amazon Kinesis,"collect, process, and analyze video and data streams in near real time",https://aws.amazon.com/kinesis/
+Analytics,Amazon MSK,build and run applications that use Apache Kafka to process streaming data,https://aws.amazon.com/msk/
+Analytics,Amazon OpenSearch Service,"deploy, operate, and scale OpenSearch clusters in the cloud",https://aws.amazon.com/opensearch-service/
+Analytics,Amazon QuickSight,business intelligence service providing insights in a single dashboard,https://aws.amazon.com/quicksight/
+Application Integration,Amazon EventBridge,use events to connect application components and build event-driven apps,https://aws.amazon.com/eventbridge/
+Application Integration,Amazon SNS,provides message delivery from publishers to subscribers,https://aws.amazon.com/sns/
+Application Integration,Amazon SQS,provides a queue to integrate and decouple distributed software systems,https://aws.amazon.com/sqs/
+Application Integration,AWS Step Functions,integrate with Lambda and view workflows as event-driven steps,https://aws.amazon.com/step-functions/
+Business Applications,Amazon Connect,omnichannel cloud contact center,https://aws.amazon.com/connect/
+Business Applications,Amazon SES,send and receive emails through existing addresses and domains,https://aws.amazon.com/ses/
+Cloud Financial Management,AWS Billing Conductor,custom billing service supporting showback and chargeback workflows,https://aws.amazon.com/billing/conductor/
+Cloud Financial Management,AWS Budgets,set monthly cost budgets with alerts for actual or forecasted spend,https://aws.amazon.com/aws-cost-management/aws-budgets/
+Cloud Financial Management,AWS Cost and Usage Report,contains the most comprehensive set of cost and usage data available,https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/
+Cloud Financial Management,AWS Cost Explorer,"visualize cost and usage over time, including 12-month forecasts",https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
+Cloud Financial Management,AWS Marketplace,"curated digital catalog of third-party software, data, and services",https://aws.amazon.com/marketplace
+Compute,AWS Batch,run batch computing workloads,https://aws.amazon.com/batch/
+Compute,Amazon EC2,provides scalable computing capacity in the AWS Cloud,https://aws.amazon.com/ec2/
+Compute,AWS Elastic Beanstalk,deploy and manage applications without knowledge of underlying infrastructure,https://aws.amazon.com/elasticbeanstalk/
+Compute,AWS Lambda,run code without the need to provision or manage servers,https://aws.amazon.com/lambda/
+Compute,Amazon Lightsail,launch projects quickly from a simple management interface,https://aws.amazon.com/lightsail/
+Compute,AWS Outposts,extends AWS infrastructure and services to customer premises,https://aws.amazon.com/outposts/
+Containers,Amazon ECR,"secure, scalable, and reliable container image registry",https://aws.amazon.com/ecr/
+Containers,Amazon ECS,"deploy, manage, and scale containerized applications",https://aws.amazon.com/ecs/
+Containers,Amazon EKS,run Kubernetes without maintaining the control plane or nodes,https://aws.amazon.com/eks/
+Containers,AWS Fargate,works with Amazon ECS to run containers without managing servers,https://aws.amazon.com/fargate/
+Customer Engagement,AWS Activate for Startups,provides resources to help startups build and grow on AWS,https://aws.amazon.com/activate/
+Customer Engagement,AWS IQ,connects users to AWS Certified experts for project help,https://aws.amazon.com/iq/
+Customer Engagement,AWS Managed Services (AMS),provides ongoing management for AWS infrastructure,https://aws.amazon.com/managed-services/
+Database,Amazon Aurora,database engine compatible with MySQL and PostgreSQL,https://aws.amazon.com/rds/aurora/
+Database,Amazon DynamoDB,"schemaless NoSQL database service with fast, predictable performance",https://aws.amazon.com/dynamodb/
+Database,Amazon MemoryDB for Redis,"durable, in-memory database for ultra-fast performance",https://aws.amazon.com/memorydb/
+Database,Amazon Neptune,graph database service for highly connected datasets,https://aws.amazon.com/neptune/
+Database,Amazon RDS,"set up, operate, and scale relational databases in the cloud",https://aws.amazon.com/rds/
+Database,Amazon Redshift,petabyte-scale data warehouse with intelligent scaling,https://aws.amazon.com/redshift/
+Developer Tools,AWS AppConfig,"create, manage, and quickly deploy application configurations",https://aws.amazon.com/systems-manager/features/appconfig/
+Developer Tools,AWS CLI,interact with services through command-line shell commands,https://aws.amazon.com/cli/
+Developer Tools,AWS Cloud9,integrated development environment (IDE) with a built-in terminal,https://aws.amazon.com/cloud9/
+Developer Tools,AWS CloudShell,"browser-based, pre-authenticated shell launched from the console",https://aws.amazon.com/cloudshell/
+Developer Tools,AWS CodeArtifact,artifact repository for storing and sharing software packages,https://aws.amazon.com/codeartifact/
+Developer Tools,AWS CodeBuild,"compiles source code, runs unit tests, and produces artifacts",https://aws.amazon.com/codebuild/
+Developer Tools,AWS CodeCommit,host private Git repositories and manage assets,https://aws.amazon.com/codecommit/
+Developer Tools,AWS CodeDeploy,automate deployments to on-premises or AWS resources,https://aws.amazon.com/codedeploy/
+Developer Tools,AWS CodePipeline,"model, visualize, and automate software release steps",https://aws.amazon.com/codepipeline/
+Developer Tools,AWS CodeStar,create and manage software development projects and toolchains,https://aws.amazon.com/codestar/
+Developer Tools,AWS SDK,develop applications in preferred programming languages,https://aws.amazon.com/tools/#sdk
+Developer Tools,AWS X-Ray,collects data and provides insights into application requests,https://aws.amazon.com/xray/
+End-User Computing,Amazon AppStream 2.0,streaming service providing access to desktop apps from anywhere,https://aws.amazon.com/appstream2/
+End-User Computing,Amazon WorkSpaces,"provision virtual, cloud-based desktops without hardware deployment",https://aws.amazon.com/workspaces/
+End-User Computing,Amazon WorkSpaces Web,secure browser access to internal websites and SaaS apps,https://aws.amazon.com/workspaces/web/
+Frontend Web and Mobile,AWS Amplify,set of tools to build full-stack applications,https://aws.amazon.com/amplify/
+Frontend Web and Mobile,AWS AppSync,connect apps to data with GraphQL and pub/sub APIs,https://aws.amazon.com/appsync/
+Frontend Web and Mobile,AWS Device Farm,"app testing for Android, iOS, and web applications",https://aws.amazon.com/device-farm/
+Internet of Things (IoT),AWS IoT Core,connect and process messages between devices and IoT services,https://aws.amazon.com/iot-core/
+Internet of Things (IoT),AWS IoT Greengrass,"build, deploy, and manage IoT edge runtime applications on devices",https://aws.amazon.com/iot-greengrass/
+Machine Learning (ML),Amazon Comprehend,uses NLP to extract insights from documents,https://aws.amazon.com/comprehend/
+Machine Learning (ML),Amazon Kendra,intelligent search service using NLP and ML algorithms,https://aws.amazon.com/kendra/
+Machine Learning (ML),Amazon Lex,build conversational interfaces using voice and text,https://aws.amazon.com/lex/
+Machine Learning (ML),Amazon Polly,convert text into lifelike speech,https://aws.amazon.com/polly/
+Machine Learning (ML),Amazon Rekognition,"identify objects, people, and activities in images and videos",https://aws.amazon.com/rekognition/
+Machine Learning (ML),Amazon SageMaker,"build, train, and deploy ML models in production environments",https://aws.amazon.com/sagemaker/
+Machine Learning (ML),Amazon Textract,extract text and data from scanned documents automatically,https://aws.amazon.com/textract/
+Machine Learning (ML),Amazon Transcribe,automatic speech recognition converting audio to text,https://aws.amazon.com/transcribe/
+Machine Learning (ML),Amazon Translate,translate unstructured text or build multi-language apps,https://aws.amazon.com/translate/
+Management and Governance,AWS Auto Scaling,automatically scale resources based on defined thresholds,https://aws.amazon.com/autoscaling/
+Management and Governance,AWS CloudFormation,"model, set up, and create templates of AWS resources",https://aws.amazon.com/cloudformation/
+Management and Governance,AWS CloudTrail,"records actions taken by users in the console, CLI, and SDKs",https://aws.amazon.com/cloudtrail/
+Management and Governance,Amazon CloudWatch,"monitors resources, collects metrics, and manages alarms",https://aws.amazon.com/cloudwatch/
+Management and Governance,AWS Compute Optimizer,provides optimization recommendations based on utilization metrics,https://aws.amazon.com/compute-optimizer/
+Management and Governance,AWS Config,"detailed view of resource configuration, changes, and compliance",https://aws.amazon.com/config/
+Management and Governance,AWS Control Tower,set up and govern a multi-account environment,https://aws.amazon.com/controltower/
+Management and Governance,AWS Health Dashboard,visibility into service availability and resource performance,https://health.aws.amazon.com/health/status
+Management and Governance,AWS Launch Wizard,deploy application and domain-controller solutions,https://aws.amazon.com/launchwizard/
+Management and Governance,AWS License Manager,manage software licenses centrally across AWS and on-premises,https://aws.amazon.com/license-manager/
+Management and Governance,AWS Management Console,web application used to manage AWS resources,https://aws.amazon.com/console/
+Management and Governance,AWS Organizations,consolidate billing and manage multiple AWS accounts,https://aws.amazon.com/organizations/
+Management and Governance,AWS Service Catalog,manage catalogs of IT services approved for use on AWS,https://aws.amazon.com/servicecatalog/
+Management and Governance,AWS Systems Manager,"organize, monitor, and automate management tasks",https://aws.amazon.com/systems-manager/
+Management and Governance,AWS Trusted Advisor,inspects environment and makes best-practice recommendations,https://aws.amazon.com/premiumsupport/technology/trusted-advisor/
+Management and Governance,AWS Well-Architected Tool,provides recommendations to improve workloads,https://aws.amazon.com/well-architected-tool/
+Migration and Transfer,AWS Application Discovery Service,collects server data to help plan AWS migrations,https://aws.amazon.com/application-discovery/
+Migration and Transfer,AWS Application Migration Service,automated lift-and-shift (rehost) solution for migrations,https://aws.amazon.com/application-migration-service/
+Migration and Transfer,AWS DMS,migrate relational and NoSQL databases to AWS,https://aws.amazon.com/dms/
+Migration and Transfer,AWS Migration Hub,central location to track the status of application migrations,https://aws.amazon.com/migration-hub/
+Migration and Transfer,AWS SCT,convert database schemas from one engine to another,https://aws.amazon.com/dms/schema-conversion-tool/
+Migration and Transfer,AWS Snow Family,run operations in remote or non-data center environments,https://aws.amazon.com/snow/
+Migration and Transfer,AWS Transfer Family,transfer files into and out of AWS storage services,https://aws.amazon.com/aws-transfer-family/
+Networking and Content Delivery,Amazon API Gateway,"create, publish, and monitor REST, HTTP, and WebSocket APIs",https://aws.amazon.com/api-gateway/
+Networking and Content Delivery,Amazon CloudFront,speed up distribution of web content through edge locations,https://aws.amazon.com/cloudfront/
+Networking and Content Delivery,AWS Direct Connect,private dedicated network connection from on-premises to AWS,https://aws.amazon.com/directconnect/
+Networking and Content Delivery,AWS Global Accelerator,improve app availability through a global network of endpoints,https://aws.amazon.com/global-accelerator/
+Networking and Content Delivery,Amazon Route 53,DNS service for domain registration and health checking,https://aws.amazon.com/route53/
+Networking and Content Delivery,Amazon VPC,launch resources in logically isolated virtual networks,https://aws.amazon.com/vpc/
+Networking and Content Delivery,AWS VPN,secure and private tunnel from on-premises to the cloud,https://aws.amazon.com/vpn/
+"Security, Identity, and Compliance",AWS Artifact,download security and compliance documents,https://aws.amazon.com/artifact/
+1,AWS Audit Manager,continually audit AWS usage to manage risk and compliance,https://aws.amazon.com/audit-manager/
+"Security, Identity, and Compliance",AWS Certificate Manager (ACM),"creates, stores, and renews SSL/TLS certificates",https://aws.amazon.com/certificate-manager/
+"Security, Identity, and Compliance",AWS CloudHSM,compute device that processes cryptographic operations,https://aws.amazon.com/cloudhsm/
+"Security, Identity, and Compliance",Amazon Cognito,"identity platform for web and mobile apps, including federation",https://aws.amazon.com/cognito/
+"Security, Identity, and Compliance",Amazon Detective,identify the root cause of security findings or suspicious activities,https://aws.amazon.com/detective/
+"Security, Identity, and Compliance",AWS Directory Service,run Microsoft Active Directory with AWS services,https://aws.amazon.com/directoryservice/
+"Security, Identity, and Compliance",AWS Firewall Manager,central management for firewall protections across multiple accounts,https://aws.amazon.com/firewall-manager/
+"Security, Identity, and Compliance",Amazon GuardDuty,intelligent threat detection and continuous monitoring,https://aws.amazon.com/guardduty/
+"Security, Identity, and Compliance",IAM,securely control access to AWS resources,https://aws.amazon.com/iam/
+"Security, Identity, and Compliance",IAM Identity Center,manage sign-in security for workforce identities,https://aws.amazon.com/iam/identity-center/
+"Security, Identity, and Compliance",Amazon Inspector,scans workloads for software vulnerabilities and network exposure,https://aws.amazon.com/inspector/
+"Security, Identity, and Compliance",AWS KMS,create and control cryptographic keys protecting user data,https://aws.amazon.com/kms/
+"Security, Identity, and Compliance",Amazon Macie,discovers sensitive data and provides automated protection,https://aws.amazon.com/macie/
+"Security, Identity, and Compliance",AWS Network Firewall,provides intrusion detection and prevention for a VPC,https://aws.amazon.com/network-firewall/
+"Security, Identity, and Compliance",AWS RAM,securely share resources across AWS accounts,https://aws.amazon.com/ram/
+"Security, Identity, and Compliance",AWS Secrets Manager,manage and rotate credentials to improve security,https://aws.amazon.com/secrets-manager/
+"Security, Identity, and Compliance",AWS Security Hub,collects security data across accounts to identify priority issues,https://aws.amazon.com/security-hub/
+"Security, Identity, and Compliance",AWS Shield,protection against DDoS attacks for AWS resources,https://aws.amazon.com/shield/
+"Security, Identity, and Compliance",AWS WAF,monitor HTTP(S) requests and control access to resources,https://aws.amazon.com/waf/
+Storage,AWS Backup,centralize and automate data backups across services,https://aws.amazon.com/backup/
+Storage,Amazon EBS,block-level storage volumes for use with EC2 instances,https://aws.amazon.com/ebs/
+Storage,Amazon EFS,"serverless, fully scalable shared file system",https://aws.amazon.com/efs/
+Storage,AWS Elastic Disaster Recovery,minimizes downtime and loss from catastrophes or service failures,https://aws.amazon.com/disaster-recovery/
+Storage,Amazon FSx,"launch, run, and scale file systems in the cloud",https://aws.amazon.com/fsx/
+Storage,Amazon S3,scalable object storage in the cloud,https://aws.amazon.com/s3/
+Storage,Amazon S3 Glacier storage classes,secure and durable data archiving and long-term backup,https://aws.amazon.com/s3/storage-classes/glacier/
+Storage,AWS Storage Gateway,connect on-premises appliances with cloud-based storage,https://aws.amazon.com/storagegateway/
+Well-Architected Framework,Operational excellence,support development and run workloads effectively,https://wa.aws.amazon.com/
+Well-Architected Framework,Security,"protect data, systems, and assets using cloud technologies",https://wa.aws.amazon.com/
+Well-Architected Framework,Reliability,workload ability to perform intended functions correctly,https://wa.aws.amazon.com/
+Well-Architected Framework,Performance efficiency,use computing resources efficiently as demand changes,https://wa.aws.amazon.com/
+Well-Architected Framework,Cost optimization,run systems to deliver business value at the lowest price point,https://wa.aws.amazon.com/
+Well-Architected Framework,Sustainability,focuses on environmental impacts and energy efficiency,https://wa.aws.amazon.com/
+Global Infrastructure,Regions,isolated geographic area consisting of multiple Availability Zones,https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+Global Infrastructure,Availability Zones,one or more data centers within a Region,https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+Global Infrastructure,Edge locations,worldwide network optimizing latency and throughput,https://aws.amazon.com/cloudfront/features/#Global_Edge_Network
+Global Infrastructure,AWS Local Zones,places resources close to large population centers,https://aws.amazon.com/about-aws/global-infrastructure/localzones/
+Global Infrastructure,AWS Wavelength,delivers ultra-low latencies to mobile devices via 5G,https://aws.amazon.com/wavelength/
+EC2 Purchasing Options,Dedicated Hosts,physical host fully dedicated to the user,https://aws.amazon.com/ec2/pricing/dedicated-instances/
+EC2 Purchasing Options,Dedicated Instances,EC2 instance in a VPC dedicated to one user,https://aws.amazon.com/ec2/pricing/dedicated-instances/
+EC2 Purchasing Options,EC2 Savings Plan,commit to a 1-year or 3-year term for instance families,https://aws.amazon.com/savingsplans/
+EC2 Purchasing Options,On-Demand Capacity,reserve EC2 instance capacity with no term commitment,https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html
+EC2 Purchasing Options,On-Demand Instances,"no long-term commitment, pay by the second",https://aws.amazon.com/ec2/pricing/on-demand/
+EC2 Purchasing Options,Reserved Instances,commit to a 1-year or 3-year term,https://aws.amazon.com/ec2/pricing/reserved-instances/
+EC2 Purchasing Options,Spot Instances,request unused instances for flexible workloads,https://aws.amazon.com/ec2/spot/
+Networking Gateways,AWS Transit Gateway,"connects VPCs, accounts, and on-premises networks to one gateway",https://aws.amazon.com/transit-gateway/
+Networking Gateways,Customer gateway,physical or software appliance owned on premises,https://docs.aws.amazon.com/vpn/latest/s2svpn/YourCustomerGateway.html
+Networking Gateways,Direct Connect gateway,connectivity spanning VPCs across multiple Regions,https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html
+Networking Gateways,Internet gateway,allows communication between a user's computer and the internet,https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html
+Networking Gateways,NAT gateway,gives private subnet instances access to external services,https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html
+Networking Gateways,Virtual private gateway,gateway on the AWS side of a Site-to-Site VPN connection,https://docs.aws.amazon.com/vpn/latest/s2svpn/VPG.html
