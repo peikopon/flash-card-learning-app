@@ -6,39 +6,27 @@ import { motion, AnimatePresence } from 'framer-motion';
 import LanguageToggle from './LanguageToggle';
 
 const StudyMode = ({ items, onExit, onUpdateProgress, progress, onToggleLanguage }) => {
-    // Shuffle items on mount, or assume passed shuffled.
-    // We'll shuffle here to ensure randomness as per requirements "appear in random order"
     const [queue, setQueue] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [complete, setComplete] = useState(false);
     const [sessionStats, setSessionStats] = useState({ correct: 0, total: 0 });
 
-    // Handle items update (e.g. language switch)
     useEffect(() => {
         setQueue(prevQueue => {
-            // Initial load
             if (prevQueue.length === 0) {
                 return [...items].sort(() => 0.5 - Math.random());
             }
-
-            // Check if this is just a translation update (ids match)
-            // We assume 'id' (Content) is consistent across languages or mapped correctly.
-            // If IDs are consistent, we map old queue to new items.
             const allIdsMatch = prevQueue.every(q => items.find(i => i.id === q.id));
-
             if (allIdsMatch && prevQueue.length === items.length) {
-                // Just map to new items, preserving order
                 return prevQueue.map(q => items.find(i => i.id === q.id));
             }
-
-            // If completely different items, reshuffle (new session)
             return [...items].sort(() => 0.5 - Math.random());
         });
     }, [items]);
 
     const handleInstantMaster = () => {
         const currentItem = queue[currentIndex];
-        const newProgress = updateItemProgress(currentItem.content, true, true); // true, true = isCorrect, isInstant
+        const newProgress = updateItemProgress(currentItem.content, true, true);
         onUpdateProgress(newProgress);
 
         setSessionStats(prev => ({
@@ -47,7 +35,7 @@ const StudyMode = ({ items, onExit, onUpdateProgress, progress, onToggleLanguage
         }));
 
         if (currentIndex < queue.length - 1) {
-            setTimeout(() => setCurrentIndex(prev => prev + 1), 200);
+            setTimeout(() => setCurrentIndex(prev => prev + 1), 300);
         } else {
             setComplete(true);
         }
@@ -55,20 +43,16 @@ const StudyMode = ({ items, onExit, onUpdateProgress, progress, onToggleLanguage
 
     const handleResult = (isCorrect) => {
         const currentItem = queue[currentIndex];
-
-        // Update Storage
         const newProgress = updateItemProgress(currentItem.content, isCorrect, false);
-        onUpdateProgress(newProgress); // Notify App to update state
+        onUpdateProgress(newProgress);
 
-        // Update Session Stats
         setSessionStats(prev => ({
             total: prev.total + 1,
             correct: isCorrect ? prev.correct + 1 : prev.correct
         }));
 
-        // Next Card
         if (currentIndex < queue.length - 1) {
-            setTimeout(() => setCurrentIndex(prev => prev + 1), 200); // Slight delay for animation
+            setTimeout(() => setCurrentIndex(prev => prev + 1), 300);
         } else {
             setComplete(true);
         }
@@ -77,17 +61,44 @@ const StudyMode = ({ items, onExit, onUpdateProgress, progress, onToggleLanguage
     const currentItem = queue[currentIndex];
 
     if (complete) {
+        const completionRate = Math.round((sessionStats.correct / sessionStats.total) * 100) || 0;
         return (
-            <div className="container" style={{ textAlign: 'center', minHeight: '80vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="glass-panel" style={{ padding: '3rem' }}>
-                    <h2 style={{ fontSize: '2rem' }}>Session Complete!</h2>
-                    <p style={{ fontSize: '1.2rem', margin: '2rem 0' }}>
-                        You mastered {sessionStats.correct} out of {sessionStats.total} cards in this session.
-                    </p>
+            <div className="container" style={{ textAlign: 'center', minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                <motion.div
+                    initial={{ scale: 0.9, opacity: 0, y: 20 }}
+                    animate={{ scale: 1, opacity: 1, y: 0 }}
+                    transition={{ type: "spring", damping: 20 }}
+                    className="glass-panel"
+                    style={{ padding: '4rem 3rem', maxWidth: '500px' }}
+                >
+                    <div style={{
+                        width: '100px',
+                        height: '100px',
+                        background: 'var(--success-color)',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        margin: '0 auto 2rem',
+                        boxShadow: `0 0 40px ${completionRate > 50 ? 'var(--success-color)' : 'var(--accent-purple)'}40`
+                    }}>
+                        <span style={{ fontSize: '2.5rem' }}>✨</span>
+                    </div>
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'white' }}>Session Complete!</h2>
+                    <div style={{ fontSize: '1.2rem', marginBottom: '2.5rem', color: 'var(--text-secondary)' }}>
+                        <p style={{ margin: '0 0 1rem 0' }}>You mastered <span style={{ color: 'white', fontWeight: '800' }}>{sessionStats.correct}</span> out of <span style={{ color: 'white' }}>{sessionStats.total}</span> cards.</p>
+                        <div style={{ height: '8px', background: 'rgba(255,255,255,0.05)', borderRadius: '10px', overflow: 'hidden', marginTop: '1rem' }}>
+                            <motion.div
+                                initial={{ width: 0 }}
+                                animate={{ width: `${completionRate}%` }}
+                                transition={{ duration: 1.5, ease: "easeOut" }}
+                                style={{ height: '100%', background: 'var(--primary-color)' }}
+                            />
+                        </div>
+                    </div>
                     <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-                        <button className="btn btn-secondary" onClick={onExit}>Back to Dashboard</button>
+                        <button className="btn btn-secondary" onClick={onExit}>Back Home</button>
                         <button className="btn btn-primary" onClick={() => {
-                            // Restart same set
                             const shuffled = [...items].sort(() => 0.5 - Math.random());
                             setQueue(shuffled);
                             setCurrentIndex(0);
@@ -100,56 +111,50 @@ const StudyMode = ({ items, onExit, onUpdateProgress, progress, onToggleLanguage
         );
     }
 
-    // Guard against render before queue update
-    if (!currentItem) return <div className="container" style={{ textAlign: 'center' }}>Loading...</div>;
+    if (!currentItem) return <div style={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center' }}>Loading session...</div>;
 
     const theme = getSectionTheme(currentItem.section);
+    const progressPercent = ((currentIndex) / queue.length) * 100;
 
     return (
-        <div className="container" style={{
-            minHeight: '100dvh',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flex-start',
-            alignItems: 'center',
-            paddingTop: '1rem',
-            paddingBottom: '2rem'
-        }}>
-            {/* Header: Exit + Progress + Spacer */}
+        <div className="container" style={{ minHeight: '100dvh', padding: '1rem' }}>
+            {/* Immersive Header */}
             <div style={{
                 width: '100%',
-                display: 'grid',
-                gridTemplateColumns: 'auto 1fr auto', // Left (auto), Center (1fr), Right (auto)
+                display: 'flex',
                 alignItems: 'center',
-                marginBottom: '2rem',
-                padding: '0 0.5rem'
+                justifyContent: 'space-between',
+                marginBottom: '3rem',
+                gap: '2rem'
             }}>
-                {/* Left: Exit */}
-                <button className="btn btn-secondary" onClick={onExit} style={{ padding: '0.6rem 1.2rem' }}>&larr; Exit</button>
+                <button className="btn btn-secondary" onClick={onExit} style={{ padding: '0.6rem 1.2rem', minWidth: '100px' }}>&larr; Exit</button>
 
-                {/* Center: Progress */}
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                        {currentIndex + 1} / {queue.length}
-                    </span>
-                    <div style={{ width: '120px', height: '4px', background: 'var(--surface-color)', marginTop: '6px', borderRadius: '2px' }}>
-                        <div style={{ width: `${((currentIndex) / queue.length) * 100}%`, height: '100%', background: 'var(--primary-color)', transition: 'width 0.3s' }} />
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '4px' }}>
+                        <span style={{ color: 'white', fontWeight: '800', fontSize: '1.2rem' }}>{currentIndex + 1}</span>
+                        <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>/ {queue.length}</span>
+                    </div>
+                    <div style={{ width: '100%', maxWidth: '200px', height: '4px', background: 'rgba(255,255,255,0.05)', borderRadius: '10px', overflow: 'hidden' }}>
+                        <motion.div
+                            animate={{ width: `${progressPercent}%` }}
+                            transition={{ duration: 0.5 }}
+                            style={{ height: '100%', background: 'var(--primary-color)', boxShadow: '0 0 10px var(--primary-glow)' }}
+                        />
                     </div>
                 </div>
 
-                {/* Right: Toggle */}
-                <div style={{ display: 'flex', justifyContent: 'flex-end', minWidth: '80px' }}>
+                <div style={{ minWidth: '100px', display: 'flex', justifyContent: 'flex-end' }}>
                     <LanguageToggle onToggle={onToggleLanguage} />
                 </div>
             </div>
 
             <AnimatePresence mode='wait'>
                 <motion.div
-                    key={currentItem.content}
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -50 }}
-                    transition={{ duration: 0.2 }}
+                    key={`${currentItem.id}-${currentIndex}`}
+                    initial={{ opacity: 0, scale: 0.95, rotateY: -10 }}
+                    animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+                    exit={{ opacity: 0, scale: 1.05, rotateY: 10 }}
+                    transition={{ type: "spring", damping: 25, stiffness: 200 }}
                     style={{ width: '100%', display: 'flex', justifyContent: 'center' }}
                 >
                     <Card
@@ -165,5 +170,6 @@ const StudyMode = ({ items, onExit, onUpdateProgress, progress, onToggleLanguage
         </div>
     );
 };
+
 
 export default StudyMode;

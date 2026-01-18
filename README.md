@@ -1,8 +1,25 @@
 # AWS Cloud Practitioner Prep App
 
 ## Project Overview
-A modern, interactive flashcard application designed to help users prepare for the AWS Cloud Practitioner exam. The app features a spaced-repetition inspired mastery system, intuitive gesture controls, and a comprehensive dashboard.
+A modern, interactive flashcard application designed to help users prepare for the AWS Cloud Practitioner exam. The app features a premium glassmorphic design, a spaced-repetition inspired mastery system, intuitive gesture controls, and a comprehensive dashboard.
 
+---
+
+## 📸 App Page Preview
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Study Mode (Card Front & Back)
+<div style="display: flex; gap: 10px;">
+  <img src="./screenshots/card_front.png" width="48%" />
+  <img src="./screenshots/card_back.png" width="48%" />
+</div>
+
+### Mastered List
+![Mastered List](./screenshots/mastered_list.png)
+
+---
 
 ## 🚀 How to Run
 
@@ -34,43 +51,52 @@ The output will be in the `dist/` folder.
 
 ---
 
+## 🎨 Design & Aesthetics
+
+### Premium UI/UX
+The application features a state-of-the-art **Glassmorphism** design language:
+*   **Immersive Backgrounds**: A dynamic, animated mesh gradient background that creates a modern, high-end feel.
+*   **Refined Color System**: Strategic use of category-specific colors (e.g., Pink for Application Integration, Orange for Compute) for instant visual recognition.
+*   **Glass Panels**: Sophisticated use of background blurs (`backdrop-filter`) and semi-transparent surfaces for a clean, layered interface.
+*   **Persistent Branding**: Category cards and flashcards feature bold, persistent borders in their respective theme colors.
+
+---
+
 ## 📋 Specifications & Features
 
 ### 1. Interactive Study Mode
-*   **Flashcards**: Double-sided cards with 3D flip animations revealing detailed AWS service descriptions and documentation links.
+*   **Flashcards**: Double-sided cards with **3D flip animations**. The front of the card uses the category's theme color, while the back provides detailed AWS service descriptions and documentation links.
 *   **Gestures**: Swipe right (Thumb Up) for "Correct" and swipe left (Thumb Down) for "Incorrect".
 *   **Mastery System**:
-    *   **HP Bar**: Visual progress indicator (0/3 notches) on every card.
-    *   **3-Strike Rule**: Requires 3 cumulative correct answers to master a card. A single wrong answer resets mastery progress to 0, enforcing strict reinforcement.
+    *   **Session Progress**: Visual tracker (0/3 notches) on every card to monitor cumulative mastery.
+    *   **Strict Reinforcement**: Requires multiple cumulative correct answers to master a card. A single wrong answer resets mastery progress, ensuring deep conceptual understanding.
     *   **Instant Master**: Gold Star button to immediately mark a known concept as mastered.
 *   **Mobile Optimized**: Responsive layout ensuring accessible buttons and progress tracking on smartphone screens.
 
 ### 2. Dashboard
 *   **Progress Tracking**:
-    *   Overall mastery percentage.
-    *   Circular progress chart with exact count (e.g., "50 / 150").
-    *   Breakdown by AWS Section (Security, Compute, Storage, etc.) with individual progress bars.
-*   **Quick Actions**: Start random study sessions or jump into specific sections.
+    *   Overall mastery percentage with a sleek circular progress chart.
+    *   Breakdown by AWS Section (Security, Compute, Storage, etc.) with category-specific progress bars.
+    *   Staggered animations for a professional, high-end load experience.
+*   **Quick Actions**: Start random study sessions or dive into specific categorized sections.
 
 ### 3. Mastered Cards Management
-*   **List View**: A professional, table-like view of all mastered items.
+*   **Premium List View**: A refined view of all mastered items with sleek glassmorphic list items.
 *   **Advanced Filtering**:
     *   **Search**: Real-time text search by service name or section.
-    *   **Smart Chips**: Toggleable pill-badges for each section (e.g., "Compute", "Database") to filter the list quickly.
-*   **Management**: Users can "Delist" (un-master) items if they feel they need to review them again.
+    *   **Smart Chips**: Interactive section badges for rapid list filtering.
+*   **Management**: Delist (un-master) items you wish to revisit in your study sessions.
 
 ### 4. Internationalization (i18n)
-*   **Multilingual Support**: Full support for **English** and **Japanese** (日本語).
-*   **Dynamic Language Toggle**: A floating language switcher allows users to change the language at any time—including during an active flashcard session—without losing progress.
-*   **Localized Content**:
-    *   **UI Translation**: All headers, buttons, and progress indicators are fully translated.
-    *   **Study Content**: Dynamic loading of localized datasets (`data.csv` and `data_jp.csv`) to ensure flashcard content matches the selected language.
+*   **Multilingual Support**: Seamless switching between **English** and **Japanese** (日本語).
+*   **Dynamic Language Toggle**: A floating, glassmorphic language switcher accessible across all views.
+*   **Localized Content**: Fully translated UI and dynamically loaded localized datasets.
 
 ## 🛠 Tech Stack
 *   **Framework**: React (Vite)
 *   **Internationalization**: `react-i18next` & `i18next`
-*   **Styling**: Vanilla CSS with CSS Variables for theming.
-*   **Animations**: `framer-motion` for fluid interactions.
+*   **Styling**: Vanilla CSS with advanced CSS Variables and `backdrop-filter`.
+*   **Animations**: `framer-motion` for fluid, staggered transitions and 3D effects.
 *   **Data Handling**: `papaparse` for CSV data loading.
 *   **Persistence**: `localStorage` (Offline/Local save).
 *   **Icons**: `react-icons` (FontAwesome).
@@ -79,6 +105,6 @@ The output will be in the `dist/` folder.
 *   `src/components/`: UI Components (Card, StudyMode, Dashboard, MasteredList, LanguageToggle).
 *   `src/utils/`: Logic for storage, CSV parsing, and theming.
 *   `public/`: Static assets (CSV data, logos).
-*   `src/i18n.js`: Configuration for internationalization resources and translations.
+*   `src/i18n.js`: Configuration for internationalization.
 
 ---
