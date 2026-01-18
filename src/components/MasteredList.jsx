@@ -61,8 +61,8 @@ const MasteredList = ({ data, progress, onExit, onUpdateProgress, onToggleLangua
 
     return (
         <div className="container animate-fade-in" style={{ paddingBottom: '3rem', position: 'relative' }}>
-            {/* Top Right Toggle */}
-            <div style={{ position: 'absolute', top: 0, right: 0, zIndex: 10 }}>
+            {/* Bottom Center Toggle (Fixed) */}
+            <div style={{ position: 'fixed', bottom: '-15px', left: '50%', transform: 'translateX(-50%)', zIndex: 1000 }}>
                 <LanguageToggle onToggle={onToggleLanguage} />
             </div>
 
