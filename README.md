@@ -59,8 +59,16 @@ The output will be in the `dist/` folder.
     *   **Smart Chips**: Toggleable pill-badges for each section (e.g., "Compute", "Database") to filter the list quickly.
 *   **Management**: Users can "Delist" (un-master) items if they feel they need to review them again.
 
+### 4. Internationalization (i18n)
+*   **Multilingual Support**: Full support for **English** and **Japanese** (日本語).
+*   **Dynamic Language Toggle**: A floating language switcher allows users to change the language at any time—including during an active flashcard session—without losing progress.
+*   **Localized Content**:
+    *   **UI Translation**: All headers, buttons, and progress indicators are fully translated.
+    *   **Study Content**: Dynamic loading of localized datasets (`data.csv` and `data_jp.csv`) to ensure flashcard content matches the selected language.
+
 ## 🛠 Tech Stack
 *   **Framework**: React (Vite)
+*   **Internationalization**: `react-i18next` & `i18next`
 *   **Styling**: Vanilla CSS with CSS Variables for theming.
 *   **Animations**: `framer-motion` for fluid interactions.
 *   **Data Handling**: `papaparse` for CSV data loading.
@@ -68,8 +76,9 @@ The output will be in the `dist/` folder.
 *   **Icons**: `react-icons` (FontAwesome).
 
 ## File Structure
-*   `src/components/`: UI Components (Card, StudyMode, Dashboard, MasteredList).
+*   `src/components/`: UI Components (Card, StudyMode, Dashboard, MasteredList, LanguageToggle).
 *   `src/utils/`: Logic for storage, CSV parsing, and theming.
 *   `public/`: Static assets (CSV data, logos).
+*   `src/i18n.js`: Configuration for internationalization resources and translations.
 
 ---

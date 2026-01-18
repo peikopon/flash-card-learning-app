@@ -1,10 +1,15 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { getSectionTheme } from '../utils/theme';
 import { updateItemProgress } from '../utils/storage';
 import { FaChevronDown, FaChevronUp, FaExternalLinkAlt, FaTrash, FaSearch } from 'react-icons/fa';
+import LanguageToggle from './LanguageToggle';
 
-const MasteredList = ({ data, progress, onExit, onUpdateProgress }) => {
+const MasteredList = ({ data, progress, onExit, onUpdateProgress, onToggleLanguage }) => {
+    const { i18n } = useTranslation();
+    const isJa = i18n.language === 'ja';
+
     // State for expanded rows
     const [expandedId, setExpandedId] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
@@ -55,7 +60,12 @@ const MasteredList = ({ data, progress, onExit, onUpdateProgress }) => {
     };
 
     return (
-        <div className="container animate-fade-in" style={{ paddingBottom: '3rem' }}>
+        <div className="container animate-fade-in" style={{ paddingBottom: '3rem', position: 'relative' }}>
+            {/* Top Right Toggle */}
+            <div style={{ position: 'absolute', top: 0, right: 0, zIndex: 10 }}>
+                <LanguageToggle onToggle={onToggleLanguage} />
+            </div>
+
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '2rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                     <button className="btn btn-secondary" onClick={onExit}>&larr; Back</button>
@@ -66,7 +76,9 @@ const MasteredList = ({ data, progress, onExit, onUpdateProgress }) => {
                         padding: '2px 8px',
                         borderRadius: '12px',
                         fontSize: '0.8rem',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
+                        marginTop: '6px',
+                        marginLeft: '-0.3rem'
                     }}>
                         {masteredItems.length}
                     </span>
@@ -88,7 +100,7 @@ const MasteredList = ({ data, progress, onExit, onUpdateProgress }) => {
                         border: '1px solid var(--surface-hover)',
                         background: 'rgba(30, 41, 59, 0.5)',
                         color: 'var(--text-main)',
-                        fontSize: '1rem',
+                        fontSize: isJa ? '1.rem' : '1.0rem',
                         outline: 'none'
                     }}
                 />
@@ -112,7 +124,7 @@ const MasteredList = ({ data, progress, onExit, onUpdateProgress }) => {
                                     padding: '6px 12px',
                                     borderRadius: '20px',
                                     cursor: 'pointer',
-                                    fontSize: '0.9rem',
+                                    fontSize: isJa ? '0.75rem' : '0.9rem',
                                     display: 'flex',
                                     alignItems: 'center',
                                     gap: '6px',

@@ -1,0 +1,150 @@
+Section,Content,Details,Link
+アナリティクス,Amazon Athena,Amazon S3内のデータを標準SQLを使用して直接分析します,https://aws.amazon.com/athena/
+アナリティクス,AWS Data Exchange,クラウド内のサードパーティデータを検索、購読、使用します,https://aws.amazon.com/data-exchange/
+アナリティクス,Amazon EMR,大量のデータを処理・分析するためのビッグデータフレームワークを実行します,https://aws.amazon.com/emr/
+アナリティクス,AWS Glue,複数のソースからのデータを検出、準備、移動、統合します,https://aws.amazon.com/glue/
+アナリティクス,Amazon Kinesis,動画やデータストリームをリアルタイムで収集、処理、分析します,https://aws.amazon.com/kinesis/
+アナリティクス,Amazon MSK,Apache Kafkaを使用してストリーミングデータを処理するアプリケーションを構築・実行します,https://aws.amazon.com/msk/
+アナリティクス,Amazon OpenSearch Service,クラウド内でOpenSearchクラスターをデプロイ、運用、スケーリングします,https://aws.amazon.com/opensearch-service/
+アナリティクス,Amazon QuickSight,単一のダッシュボードでインサイトを提供するビジネスインテリジェンスサービス,https://aws.amazon.com/quicksight/
+アプリケーション統合,Amazon EventBridge,イベントを使用してアプリケーションコンポーネントを接続し、イベント駆動型アプリを構築します,https://aws.amazon.com/eventbridge/
+アプリケーション統合,Amazon SNS,パブリッシャーからサブスクライバーへのメッセージ配信を提供します,https://aws.amazon.com/sns/
+アプリケーション統合,Amazon SQS,分散ソフトウェアシステムを統合および分離するためのキューを提供します,https://aws.amazon.com/sqs/
+アプリケーション統合,AWS Step Functions,Lambdaと統合し、ワークフローをイベント駆動型のステップとして表示します,https://aws.amazon.com/step-functions/
+ビジネスアプリケーション,Amazon Connect,オムニチャネルのクラウドコンタクトセンター,https://aws.amazon.com/connect/
+ビジネスアプリケーション,Amazon SES,既存のアドレスとドメインを使用してメールを送受信します,https://aws.amazon.com/ses/
+クラウド財務管理,AWS Billing Conductor,請求とチャージバックのワークフローをサポートするカスタム請求サービス,https://aws.amazon.com/billing/conductor/
+クラウド財務管理,AWS Budgets,実際または予測される支出に対してアラートを設定して予算管理,https://aws.amazon.com/aws-cost-management/aws-budgets/
+クラウド財務管理,AWS Cost and Usage Report,利用可能な最も包括的なコストと使用状況データのセットを含みます,https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/
+クラウド財務管理,AWS Cost Explorer,12か月の予測を含む、過去のコストと使用状況を視覚化します,https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
+クラウド財務管理,AWS Marketplace,サードパーティのソフトウェア、データ、サービスの厳選されたデジタルカタログ,https://aws.amazon.com/marketplace
+コンピュート,AWS Batch,バッチコンピューティングワークロードを実行します,https://aws.amazon.com/batch/
+コンピュート,Amazon EC2,AWSクラウドでスケーラブルなコンピューティング能力を提供します,https://aws.amazon.com/ec2/
+コンピュート,AWS Elastic Beanstalk,基盤となるインフラストラクチャの知識なしでアプリケーションをデプロイおよび管理します,https://aws.amazon.com/elasticbeanstalk/
+コンピュート,AWS Lambda,サーバーのプロビジョニングや管理なしでコードを実行します,https://aws.amazon.com/lambda/
+コンピュート,Amazon Lightsail,シンプルな管理インターフェースからプロジェクトを迅速に立ち上げます,https://aws.amazon.com/lightsail/
+コンピュート,AWS Outposts,AWSのインフラストラクチャとサービスを顧客のオンプレミスに拡張します,https://aws.amazon.com/outposts/
+コンテナ,Amazon ECR,安全でスケーラブルで信頼性の高いコンテナイメージレジストリ,https://aws.amazon.com/ecr/
+コンテナ,Amazon ECS,コンテナ化されたアプリケーションをデプロイ、管理、スケーリングします,https://aws.amazon.com/ecs/
+コンテナ,Amazon EKS,コントロールプレーンやノードを維持せずにKubernetesを実行します,https://aws.amazon.com/eks/
+コンテナ,AWS Fargate,Amazon ECSと連携してサーバーを管理せずにコンテナを実行します,https://aws.amazon.com/fargate/
+顧客エンゲージメント,AWS Activate for Startups,スタートアップがAWS上で構築および成長するのを支援するリソースを提供します,https://aws.amazon.com/activate/
+顧客エンゲージメント,AWS IQ,プロジェクトの支援のためにAWS認定エキスパートとユーザーを接続します,https://aws.amazon.com/iq/
+顧客エンゲージメント,AWS Managed Services (AMS),AWSインフラストラクチャの継続的な管理を提供します,https://aws.amazon.com/managed-services/
+データベース,Amazon Aurora,MySQLおよびPostgreSQLと互換性のあるデータベースエンジン,https://aws.amazon.com/rds/aurora/
+データベース,Amazon DynamoDB,高速で予測可能なパフォーマンスを備えたスキーマレスNoSQLデータベースサービス,https://aws.amazon.com/dynamodb/
+データベース,Amazon MemoryDB for Redis,超高速パフォーマンスのための耐久性のあるインメモリデータベース,https://aws.amazon.com/memorydb/
+データベース,Amazon Neptune,高度に接続されたデータセット向けのグラフデータベースサービス,https://aws.amazon.com/neptune/
+データベース,Amazon RDS,クラウド内でリレーショナルデータベースをセットアップ、運用、スケーリングします,https://aws.amazon.com/rds/
+データベース,Amazon Redshift,インテリジェントなスケーリングを備えたペタバイト規模のデータウェアハウス,https://aws.amazon.com/redshift/
+開発者ツール,AWS AppConfig,アプリケーション構成を作成、管理、および迅速にデプロイします,https://aws.amazon.com/systems-manager/features/appconfig/
+開発者ツール,AWS CLI,コマンドラインシェルコマンドを通じてサービスと対話します,https://aws.amazon.com/cli/
+開発者ツール,AWS Cloud9,組み込みターミナルを備えた統合開発環境（IDE）,https://aws.amazon.com/cloud9/
+開発者ツール,AWS CloudShell,コンソールから起動されるブラウザベースの事前認証済みシェル,https://aws.amazon.com/cloudshell/
+開発者ツール,AWS CodeArtifact,ソフトウェアパッケージを保存および共有するためのアーティファクトリポジトリ,https://aws.amazon.com/codeartifact/
+開発者ツール,AWS CodeBuild,ソースコードをコンパイルし、ユニットテストを実行し、アーティファクトを生成します,https://aws.amazon.com/codebuild/
+開発者ツール,AWS CodeCommit,プライベートGitリポジトリをホストし、資産を管理します,https://aws.amazon.com/codecommit/
+開発者ツール,AWS CodeDeploy,オンプレミスまたはAWSリソースへのデプロイを自動化します,https://aws.amazon.com/codedeploy/
+開発者ツール,AWS CodePipeline,ソフトウェアリリース手順をモデル化、視覚化、および自動化します,https://aws.amazon.com/codepipeline/
+開発者ツール,AWS CodeStar,ソフトウェア開発プロジェクトとツールチェーンを作成および管理します,https://aws.amazon.com/codestar/
+開発者ツール,AWS SDK,好みのプログラミング言語でアプリケーションを開発します,https://aws.amazon.com/tools/#sdk
+開発者ツール,AWS X-Ray,データを収集し、アプリケーションリクエストに関するインサイトを提供します,https://aws.amazon.com/xray/
+エンドユーザーコンピューティング,Amazon AppStream 2.0,どこからでもデスクトップアプリにアクセスできるストリーミングサービス,https://aws.amazon.com/appstream2/
+エンドユーザーコンピューティング,Amazon WorkSpaces,ハードウェアの展開なしで仮想クラウドベースのデスクトップをプロビジョニングします,https://aws.amazon.com/workspaces/
+エンドユーザーコンピューティング,Amazon WorkSpaces Web,内部ウェブサイトおよびSaaSアプリへの安全なブラウザアクセス,https://aws.amazon.com/workspaces/web/
+フロントエンドウェブとモバイル,AWS Amplify,フルスタックアプリケーションを構築するためのツールセット,https://aws.amazon.com/amplify/
+フロントエンドウェブとモバイル,AWS AppSync,GraphQLおよびPub/Sub APIを使用してアプリをデータに接続します,https://aws.amazon.com/appsync/
+フロントエンドウェブとモバイル,AWS Device Farm,Android、iOS、ウェブアプリケーション向けのアプリテスト,https://aws.amazon.com/device-farm/
+IoT,AWS IoT Core,デバイスとIoTサービス間のメッセージを接続および処理します,https://aws.amazon.com/iot-core/
+IoT,AWS IoT Greengrass,デバイス上でIoTエッジランタイムアプリケーションを構築、デプロイ、管理します,https://aws.amazon.com/iot-greengrass/
+機械学習 (ML),Amazon Comprehend,NLPを使用してドキュメントからインサイトを抽出します,https://aws.amazon.com/comprehend/
+機械学習 (ML),Amazon Kendra,NLPおよびMLアルゴリズムを使用したインテリジェントな検索サービス,https://aws.amazon.com/kendra/
+機械学習 (ML),Amazon Lex,音声とテキストを使用して会話型インターフェースを構築します,https://aws.amazon.com/lex/
+機械学習 (ML),Amazon Polly,テキストをリアルな音声に変換します,https://aws.amazon.com/polly/
+機械学習 (ML),Amazon Rekognition,画像や動画内のオブジェクト、人物、アクティビティを識別します,https://aws.amazon.com/rekognition/
+機械学習 (ML),Amazon SageMaker,本番環境でMLモデルを構築、トレーニング、およびデプロイします,https://aws.amazon.com/sagemaker/
+機械学習 (ML),Amazon Textract,スキャンしたドキュメントからテキストとデータを自動的に抽出します,https://aws.amazon.com/textract/
+機械学習 (ML),Amazon Transcribe,音声をテキストに変換する自動音声認識,https://aws.amazon.com/transcribe/
+機械学習 (ML),Amazon Translate,非構造化テキストを翻訳するか、多言語アプリを構築します,https://aws.amazon.com/translate/
+マネジメントとガバナンス,AWS Auto Scaling,定義されたしきい値に基づいてリソースを自動的にスケーリングします,https://aws.amazon.com/autoscaling/
+マネジメントとガバナンス,AWS CloudFormation,AWSリソースのテンプレートをモデル化、セットアップ、および作成します,https://aws.amazon.com/cloudformation/
+マネジメントとガバナンス,AWS CloudTrail,コンソール、CLI、SDKでのユーザーのアクションを記録します,https://aws.amazon.com/cloudtrail/
+マネジメントとガバナンス,Amazon CloudWatch,リソースを監視し、メトリクスを収集し、アラームを管理します,https://aws.amazon.com/cloudwatch/
+マネジメントとガバナンス,AWS Compute Optimizer,使用率メトリクスに基づいて最適化の推奨事項を提供します,https://aws.amazon.com/compute-optimizer/
+マネジメントとガバナンス,AWS Config,リソース構成、変更、およびコンプライアンスの詳細なビュー,https://aws.amazon.com/config/
+マネジメントとガバナンス,AWS Control Tower,マルチアカウント環境のセットアップとガバナンス,https://aws.amazon.com/controltower/
+マネジメントとガバナンス,AWS Health Dashboard,サービスの可用性とリソースパフォーマンスへの可視性,https://health.aws.amazon.com/health/status
+マネジメントとガバナンス,AWS Launch Wizard,アプリケーションおよびドメインコントローラーソリューションをデプロイします,https://aws.amazon.com/launchwizard/
+マネジメントとガバナンス,AWS License Manager,AWSおよびオンプレミス全体でソフトウェアライセンスを一元管理します,https://aws.amazon.com/license-manager/
+マネジメントとガバナンス,AWS Management Console,AWSリソースを管理するために使用されるウェブアプリケーション,https://aws.amazon.com/console/
+マネジメントとガバナンス,AWS Organizations,請求を統合し、複数のAWSアカウントを管理します,https://aws.amazon.com/organizations/
+マネジメントとガバナンス,AWS Service Catalog,AWSでの使用が承認されたITサービスのカタログを管理します,https://aws.amazon.com/servicecatalog/
+マネジメントとガバナンス,AWS Systems Manager,管理タスクを整理、監視、自動化します,https://aws.amazon.com/systems-manager/
+マネジメントとガバナンス,AWS Trusted Advisor,環境を検査し、ベストプラクティスの推奨事項を作成します,https://aws.amazon.com/premiumsupport/technology/trusted-advisor/
+マネジメントとガバナンス,AWS Well-Architected Tool,ワークロードを改善するための推奨事項を提供します,https://aws.amazon.com/well-architected-tool/
+移行と転送,AWS Application Discovery Service,サーバーデータを収集してAWS移行の計画を支援します,https://aws.amazon.com/application-discovery/
+移行と転送,AWS Application Migration Service,移行のための自動リフトアンドシフト（リホスト）ソリューション,https://aws.amazon.com/application-migration-service/
+移行と転送,AWS DMS,リレーショナルおよびNoSQLデータベースをAWSに移行します,https://aws.amazon.com/dms/
+移行と転送,AWS Migration Hub,アプリケーション移行のステータスを追跡する中央の場所,https://aws.amazon.com/migration-hub/
+移行と転送,AWS SCT,データベーススキーマをあるエンジンから別のエンジンに変換します,https://aws.amazon.com/dms/schema-conversion-tool/
+移行と転送,AWS Snow Family,リモートまたは非データセンター環境で操作を実行します,https://aws.amazon.com/snow/
+移行と転送,AWS Transfer Family,AWSストレージサービスへのファイルの転送を行います,https://aws.amazon.com/aws-transfer-family/
+ネットワーキングとコンテンツ配信,Amazon API Gateway,REST、HTTP、WebSocket APIを作成、公開、監視します,https://aws.amazon.com/api-gateway/
+ネットワーキングとコンテンツ配信,Amazon CloudFront,エッジロケーションを通じてウェブコンテンツの配信を高速化します,https://aws.amazon.com/cloudfront/
+ネットワーキングとコンテンツ配信,AWS Direct Connect,オンプレミスからAWSへの専用プライベートネットワーク接続,https://aws.amazon.com/directconnect/
+ネットワーキングとコンテンツ配信,AWS Global Accelerator,グローバルなエンドポイントネットワークを通じてアプリの可用性を向上させます,https://aws.amazon.com/global-accelerator/
+ネットワーキングとコンテンツ配信,Amazon Route 53,ドメイン登録とヘルスチェックのためのDNSサービス,https://aws.amazon.com/route53/
+ネットワーキングとコンテンツ配信,Amazon VPC,論理的に分離された仮想ネットワークでリソースを起動します,https://aws.amazon.com/vpc/
+ネットワーキングとコンテンツ配信,AWS VPN,オンプレミスからクラウドへの安全でプライベートなトンネル,https://aws.amazon.com/vpn/
+セキュリティ、アイデンティティ、コンプライアンス,AWS Artifact,セキュリティおよびコンプライアンスドキュメントをダウンロードします,https://aws.amazon.com/artifact/
+セキュリティ、アイデンティティ、コンプライアンス,AWS Audit Manager,AWSの使用状況を継続的に監査してリスクとコンプライアンスを管理します,https://aws.amazon.com/audit-manager/
+セキュリティ、アイデンティティ、コンプライアンス,AWS Certificate Manager (ACM),SSL/TLS証明書を作成、保存、更新します,https://aws.amazon.com/certificate-manager/
+セキュリティ、アイデンティティ、コンプライアンス,AWS CloudHSM,暗号化操作を処理するコンピューティングデバイス,https://aws.amazon.com/cloudhsm/
+セキュリティ、アイデンティティ、コンプライアンス,Amazon Cognito,フェデレーションを含むウェブおよびモバイルアプリ向けのアイデンティティプラットフォーム,https://aws.amazon.com/cognito/
+セキュリティ、アイデンティティ、コンプライアンス,Amazon Detective,セキュリティの検出結果や疑わしい活動の根本原因を特定します,https://aws.amazon.com/detective/
+セキュリティ、アイデンティティ、コンプライアンス,AWS Directory Service,AWSサービスでMicrosoft Active Directoryを実行します,https://aws.amazon.com/directoryservice/
+セキュリティ、アイデンティティ、コンプライアンス,AWS Firewall Manager,複数のアカウントにわたるファイアウォール保護を一元管理します,https://aws.amazon.com/firewall-manager/
+セキュリティ、アイデンティティ、コンプライアンス,Amazon GuardDuty,インテリジェントな脅威検出と継続的な監視,https://aws.amazon.com/guardduty/
+セキュリティ、アイデンティティ、コンプライアンス,IAM,AWSリソースへのアクセスを安全に制御します,https://aws.amazon.com/iam/
+セキュリティ、アイデンティティ、コンプライアンス,IAM Identity Center,従業員のアイデンティティのサインインセキュリティを管理します,https://aws.amazon.com/iam/identity-center/
+セキュリティ、アイデンティティ、コンプライアンス,Amazon Inspector,ワークロードのソフトウェア脆弱性とネットワーク露出をスキャンします,https://aws.amazon.com/inspector/
+セキュリティ、アイデンティティ、コンプライアンス,AWS KMS,ユーザーデータを保護する暗号化キーを作成および制御します,https://aws.amazon.com/kms/
+セキュリティ、アイデンティティ、コンプライアンス,Amazon Macie,機密データを検出し、自動化された保護を提供します,https://aws.amazon.com/macie/
+セキュリティ、アイデンティティ、コンプライアンス,AWS Network Firewall,VPC向けの侵入検知および防止を提供します,https://aws.amazon.com/network-firewall/
+セキュリティ、アイデンティティ、コンプライアンス,AWS RAM,AWSアカウント間でリソースを安全に共有します,https://aws.amazon.com/ram/
+セキュリティ、アイデンティティ、コンプライアンス,AWS Secrets Manager,クレデンシャルを管理およびローテーションしてセキュリティを向上させます,https://aws.amazon.com/secrets-manager/
+セキュリティ、アイデンティティ、コンプライアンス,AWS Security Hub,アカウント全体でセキュリティデータを収集し、優先順位の高い問題を特定します,https://aws.amazon.com/security-hub/
+セキュリティ、アイデンティティ、コンプライアンス,AWS Shield,AWSリソースに対するDDoS攻撃からの保護,https://aws.amazon.com/shield/
+セキュリティ、アイデンティティ、コンプライアンス,AWS WAF,HTTP(S)リクエストを監視し、リソースへのアクセスを制御します,https://aws.amazon.com/waf/
+ストレージ,AWS Backup,サービス全体でデータバックアップを一元化および自動化します,https://aws.amazon.com/backup/
+ストレージ,Amazon EBS,EC2インスタンスで使用するためのブロックレベルのストレージボリューム,https://aws.amazon.com/ebs/
+ストレージ,Amazon EFS,サーバーレスで完全にスケーラブルな共有ファイルシステム,https://aws.amazon.com/efs/
+ストレージ,AWS Elastic Disaster Recovery,災害やサービスの失敗によるダウンタイムと損失を最小限に抑えます,https://aws.amazon.com/disaster-recovery/
+ストレージ,Amazon FSx,クラウド内でファイルシステムを起動、実行、スケーリングします,https://aws.amazon.com/fsx/
+ストレージ,Amazon S3,クラウド内のスケーラブルなオブジェクトストレージ,https://aws.amazon.com/s3/
+ストレージ,Amazon S3 Glacier storage classes,安全で耐久性のあるデータアーカイブと長期バックアップ,https://aws.amazon.com/s3/storage-classes/glacier/
+ストレージ,AWS Storage Gateway,オンプレミスのアプライアンスとクラウドベースのストレージを接続します,https://aws.amazon.com/storagegateway/
+Well-Architected Framework,Operational excellence (運用上の優秀性),ワークロードを効果的に開発および実行することをサポートします,https://wa.aws.amazon.com/
+Well-Architected Framework,Security (セキュリティ),クラウド技術を使用してデータ、システム、資産を保護します,https://wa.aws.amazon.com/
+Well-Architected Framework,Reliability (信頼性),意図した機能を正しく実行するワークロードの能力,https://wa.aws.amazon.com/
+Well-Architected Framework,Performance efficiency (パフォーマンス効率),需要の変化に応じてコンピューティングリソースを効率的に使用します,https://wa.aws.amazon.com/
+Well-Architected Framework,Cost optimization (コスト最適化),最低価格でビジネス価値を提供するシステムを実行します,https://wa.aws.amazon.com/
+Well-Architected Framework,Sustainability (持続可能性),環境への影響とエネルギー効率に焦点を当てています,https://wa.aws.amazon.com/
+グローバルインフラストラクチャ,Regions (リージョン),複数のアベイラビリティーゾーンで構成される分離された地理的領域,https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+グローバルインフラストラクチャ,Availability Zones (アベイラビリティーゾーン),リージョン内の1つ以上のデータセンター,https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+グローバルインフラストラクチャ,Edge locations (エッジロケーション),レイテンシーとスループットを最適化する世界的なネットワーク,https://aws.amazon.com/cloudfront/features/#Global_Edge_Network
+グローバルインフラストラクチャ,AWS Local Zones (ローカルゾーン),リソースを大規模な人口センターの近くに配置します,https://aws.amazon.com/about-aws/global-infrastructure/localzones/
+グローバルインフラストラクチャ,AWS Wavelength,5Gを介してモバイルデバイスに超低遅延を提供します,https://aws.amazon.com/wavelength/
+EC2 購入オプション,Dedicated Hosts (専有ホスト),ユーザー専用の物理ホスト,https://aws.amazon.com/ec2/pricing/dedicated-instances/
+EC2 購入オプション,Dedicated Instances (専用インスタンス),1人のユーザー専用のVPC内のEC2インスタンス,https://aws.amazon.com/ec2/pricing/dedicated-instances/
+EC2 購入オプション,EC2 Savings Plan,インスタンスファミリーに対して1年または3年の期間をコミットします,https://aws.amazon.com/savingsplans/
+EC2 購入オプション,On-Demand Capacity (オンデマンドキャパシティ),期間のコミットメントなしでEC2インスタンスのキャパシティを予約します,https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html
+EC2 購入オプション,On-Demand Instances (オンデマンドインスタンス),長期のコミットメントなし、秒単位で支払います,https://aws.amazon.com/ec2/pricing/on-demand/
+EC2 購入オプション,Reserved Instances (リザーブドインスタンス),1年または3年の期間をコミットします,https://aws.amazon.com/ec2/pricing/reserved-instances/
+EC2 購入オプション,Spot Instances (スポットインスタンス),柔軟なワークロードのために未使用のインスタンスをリクエストします,https://aws.amazon.com/ec2/spot/
+ネットワークゲートウェイ,AWS Transit Gateway,VPC、アカウント、オンプレミスネットワークを1つのゲートウェイに接続します,https://aws.amazon.com/transit-gateway/
+ネットワークゲートウェイ,Customer gateway (カスタマーゲートウェイ),オンプレミスで所有する物理またはソフトウェアアプライアンス,https://docs.aws.amazon.com/vpn/latest/s2svpn/YourCustomerGateway.html
+ネットワークゲートウェイ,Direct Connect gateway,複数のリージョンにわたるVPCにまたがる接続,https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html
+ネットワークゲートウェイ,Internet gateway (インターネットゲートウェイ),ユーザーのコンピュータとインターネット間の通信を許可します,https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html
+ネットワークゲートウェイ,NAT gateway,プライベートサブネットインスタンスに外部サービスへのアクセスを提供します,https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html
+ネットワークゲートウェイ,Virtual private gateway (仮想プライベートゲートウェイ),Site-to-Site VPN接続のAWS側のゲートウェイ,https://docs.aws.amazon.com/vpn/latest/s2svpn/VPG.html

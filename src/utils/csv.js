@@ -1,8 +1,16 @@
 import Papa from 'papaparse';
 
-export const loadCSV = async () => {
+export const loadCSV = async (lang = 'en') => {
     try {
-        const response = await fetch('/data.csv');
+        const fileName = lang === 'ja' ? '/data_jp.csv' : '/data.csv';
+        const response = await fetch(fileName);
+
+        // Fallback for missing file if needed, but assuming it exists
+        if (!response.ok) {
+            console.warn(`Failed to load ${fileName}, falling back to English`);
+            return loadCSV('en');
+        }
+
         const csvText = await response.text();
 
         return new Promise((resolve, reject) => {

@@ -1,8 +1,11 @@
 import React, { useMemo } from 'react';
 import { getSectionTheme } from '../utils/theme';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import LanguageToggle from './LanguageToggle';
 
-const Dashboard = ({ data, progress, onSelectSection, onStudyRandom, onViewMastered }) => {
+const Dashboard = ({ data, progress, onSelectSection, onStudyRandom, onViewMastered, onToggleLanguage }) => {
+    const { t } = useTranslation();
 
     const stats = useMemo(() => {
         const total = data.length;
@@ -26,10 +29,15 @@ const Dashboard = ({ data, progress, onSelectSection, onStudyRandom, onViewMaste
     const percentage = stats.total > 0 ? Math.round((stats.mastered / stats.total) * 100) : 0;
 
     return (
-        <div className="container animate-fade-in">
+        <div className="container animate-fade-in" style={{ position: 'relative' }}>
+            {/* Top Right Toggle */}
+            <div style={{ position: 'absolute', top: 0, right: 0, zIndex: 10 }}>
+                <LanguageToggle onToggle={onToggleLanguage} />
+            </div>
+
             <header className="header" style={{ marginTop: '2rem' }}>
-                <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>AWS Cloud Practitioner Prep</h1>
-                <p style={{ color: 'var(--text-secondary)' }}>Master the cloud concepts</p>
+                <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{t('dashboard_title')}</h1>
+                <p style={{ color: 'var(--text-secondary)' }}>{t('dashboard_subtitle')}</p>
 
                 <div style={{ margin: '2rem auto', position: 'relative', width: '120px', height: '120px' }}>
                     <svg viewBox="0 0 36 36" style={{ transform: 'rotate(-90deg)', width: '100%', height: '100%' }}>
@@ -49,21 +57,23 @@ const Dashboard = ({ data, progress, onSelectSection, onStudyRandom, onViewMaste
                     </svg>
                     <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center' }}>
                         <div style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>{percentage}%</div>
-                        <div style={{ fontSize: '0.6rem', color: 'var(--text-secondary)' }}>{stats.mastered} / {stats.total}</div>
+                        <div style={{ fontSize: '0.6rem', color: 'var(--text-secondary)' }}>
+                            {t('mastered_count', { count: stats.mastered, total: stats.total })}
+                        </div>
                     </div>
                 </div>
 
                 <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
                     <button className="btn btn-primary" onClick={onStudyRandom} style={{ padding: '0.8rem 1.5rem', fontSize: '1rem' }}>
-                        Start Random Session
+                        {t('start_random')}
                     </button>
                     <button className="btn btn-secondary" onClick={onViewMastered} style={{ padding: '0.8rem 1.5rem', fontSize: '1rem' }}>
-                        View Mastered
+                        {t('view_mastered')}
                     </button>
                 </div>
             </header>
 
-            <h2 style={{ marginBottom: '1rem' }}>Study by Section</h2>
+            <h2 style={{ marginBottom: '1rem' }}>{t('study_by_section')}</h2>
             <div className="card-grid">
                 {stats.sections.map((section) => {
                     const { color, icon: Icon } = getSectionTheme(section.name);
@@ -99,7 +109,7 @@ const Dashboard = ({ data, progress, onSelectSection, onStudyRandom, onViewMaste
                                 <div>
                                     <h3 style={{ margin: 0, fontSize: '0.95rem', lineHeight: '1.3' }}>{section.name}</h3>
                                     <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', display: 'block' }}>
-                                        {section.mastered} / {section.total} mastered
+                                        {t('mastered_count', { count: section.mastered, total: section.total })}
                                     </span>
                                 </div>
                             </div>
